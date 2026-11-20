@@ -26,3 +26,44 @@
 @media(max-width:700px){.container{width:min(100% - 36px,560px)}.utility-inner{height:31px;font-size:7px}.utility-inner>span{max-width:48%;line-height:1.2}.utility-inner>div{gap:6px}.utility-inner>div>span:last-child{display:none}.header-main{height:76px}.brand{gap:9px}.brand-symbol{width:45px;height:45px;font-size:23px}.brand-text b{font-size:10px}.brand-text small{font-size:7px;letter-spacing:.3px}.header-tools{display:none}.menu-toggle{display:block;margin-left:auto}.nav-inner{width:100%}.main-nav{display:none;position:absolute;top:76px;left:0;right:0;background:var(--blue-dark);flex-direction:column;align-items:stretch;min-height:0;padding:8px 18px 15px;box-shadow:0 8px 12px #00172d30}.main-nav.open{display:flex}.nav-link,.nav-link:first-child{padding:12px 8px;border-right:0;border-bottom:1px solid #ffffff20;font-size:11px}.nav-link.active{box-shadow:inset 3px 0 var(--gold)}.breadcrumbs{padding-top:13px;padding-bottom:13px}.hero-layout{grid-template-columns:1fr;gap:25px;padding-top:32px;padding-bottom:30px}.hero h1{font-size:37px}.hero-copy>p{font-size:11px}.hero-photo{height:220px}.hero-caption{font-size:8px;padding:11px}.quick-grid{grid-template-columns:1fr 1fr}.quick-grid>a{min-height:82px;padding:12px 8px;gap:8px}.quick-icon{width:28px;height:28px;font-size:8px}.quick-grid b{font-size:9px}.quick-grid small{font-size:7px}.section{padding:48px 0}.section-heading{align-items:flex-start;flex-direction:column;gap:12px}.section-heading h2,.about-layout h2,.documents-layout h2{font-size:25px}.section-heading>p{font-size:9px}.stats-grid{grid-template-columns:1fr 1fr}.stat{padding:18px 15px;border-bottom:1px solid var(--line)}.stat:nth-child(2){border-right:0}.stat:nth-child(3),.stat:nth-child(4){border-bottom:0}.stat strong{font-size:29px}.stat span{font-size:7px}.direction-grid{grid-template-columns:1fr 1fr;gap:9px}.direction-card{padding:16px 13px;min-height:190px}.direction-card h3{font-size:14px}.direction-card p{font-size:8px}.athlete-card{grid-template-columns:105px 1fr}.portrait{min-height:145px}.athlete-info{padding:12px}.athlete-info h3{font-size:14px}.athlete-info p,.athlete-info b{font-size:8px}.home-news-grid{grid-template-columns:1fr}.home-news-card{padding:17px}.page-banner{padding:30px 0}.page-banner h1{font-size:30px}.page-banner p{font-size:10px}.about-layout,.documents-layout{grid-template-columns:1fr;gap:20px}.about-layout h2,.documents-layout h2{margin-top:5px}.about-copy .lead{font-size:13px}.leadership-grid{grid-template-columns:1fr}.leader-card{grid-template-columns:95px 1fr}.leader-photo{min-height:125px}.coach-grid{grid-template-columns:1fr 1fr;gap:10px}.coach-photo{height:125px}.coach-card>div:last-child{padding:11px}.coach-card h3{font-size:13px}.coach-card p{font-size:8px}.filter-wrap{width:100%;justify-content:space-between}.filter-select{min-width:0;max-width:62%;flex:1}.branch-row{grid-template-columns:42px 1fr;gap:10px;padding:13px 8px}.branch-badge{width:35px;height:35px;font-size:8px}.branch-row h3{font-size:13px}.branch-row p{font-size:8px}.branch-row>a{grid-column:2;font-size:8px}.news-list{grid-template-columns:1fr}.news-item{grid-template-columns:34% 1fr;min-height:170px}.news-thumb{min-height:170px}.news-body{padding:12px}.news-meta{flex-direction:column;gap:3px}.news-body h3{font-size:14px;margin:7px 0}.news-body p{font-size:8px}.calendar-head{display:none}.calendar-row{grid-template-columns:70px 1fr;gap:9px;padding:13px}.calendar-row>span{grid-column:2}.calendar-row em{grid-column:2}.calendar-row time b{font-size:21px}.calendar-row strong{font-size:12px}.contact-band-inner{align-items:flex-start;flex-direction:column}.contact-band h2{font-size:22px}.footer-grid{grid-template-columns:1fr 1fr;gap:25px 15px;padding:32px 0}.footer-bottom>.container{align-items:flex-start;flex-direction:column;padding:12px 0;font-size:7px}}
 @media(max-width:390px){.quick-grid{grid-template-columns:1fr}.quick-grid>a{border-left:1px solid var(--line)}.direction-grid,.coach-grid{grid-template-columns:1fr}.news-item{grid-template-columns:1fr}.news-thumb{min-height:135px}.footer-grid{grid-template-columns:1fr}.utility-inner>span{font-size:6px}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}}
+/* IKO WKK refresh: мягкая палитра, аккуратные hover-состояния и image slots */
+:root{--blue:#183b5b;--blue-dark:#102d49;--blue-mid:#315f7e;--sky:#e9eff2;--green:#547b68;--gold:#c9a85f;--ink:#293744;--muted:#72808b;--line:#d9dfdf;--paper:#f0f0eb;--white:#fafaf7}
+body{background:var(--paper);color:var(--ink)}
+.section-white,.quick-links,.quick-grid>a,.stats-grid,.direction-card,.athlete-card,.home-news-card,.leader-card,.coach-card,.branch-row,.document-list,.news-item,.calendar-table{background:#f8f8f4}
+.section-soft,.news-strip,.calendar-section{background:#e9eeeb}
+.site-header{background:#f8f8f4}
+.utility-bar{background:#e8ece9}
+.nav-band{background:var(--blue-dark)}
+.nav-link{flex:1;justify-content:center;text-align:center;padding:0 12px;white-space:nowrap;border-right:1px solid #ffffff16}
+.nav-link:first-child{padding:0 12px}
+.main-nav{width:100%}
+.nav-link:hover,.nav-link.active{background:#ffffff12;color:#fff;box-shadow:inset 0 -3px var(--gold)}
+a,button,.button,.quick-grid>a,.direction-card,.branch-row,.news-item{transition:color .18s ease,background-color .18s ease,border-color .18s ease,box-shadow .18s ease}
+.nav-link:hover,.quick-grid>a:hover,.branch-row:hover{transform:none}
+.quick-grid>a:hover{background:#eef2ed}
+.quick-grid>a:hover .quick-icon{background:#e3eee7;border-color:#b9d0c1}
+.button:hover,.header-contact:hover{transform:none;box-shadow:0 4px 12px #102d4918}
+.plain-link:hover,.footer-grid a:hover,.branch-row>a:hover,.news-body>a:hover{color:var(--green)}
+.photo-placeholder{background-color:#dce4e1;background-image:linear-gradient(135deg,#e0e8e4,#cbd9d2)}
+.photo-placeholder.has-photo{background-size:cover;background-position:center;background-repeat:no-repeat;border:0}
+.photo-placeholder.has-photo:before{inset:0;border:0;background:linear-gradient(0deg,#102d4940,transparent 48%)}
+.photo-placeholder.has-photo>*{display:none}
+.hero-photo{height:320px}
+.hero-caption{background:var(--blue-dark)}
+.hero{background:linear-gradient(115deg,#e9efeb 0%,#f5f5f0 62%,#e5ece7 100%);border-color:#dce3de}
+.page-banner{background:linear-gradient(110deg,#173651,#315c70)}
+.contact-page{background:#e9eeeb}
+.contact-page-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:55px}
+.contact-intro h2{font-family:var(--display);font-size:31px;line-height:1.3;color:var(--blue-dark);margin:10px 0}
+.contact-intro p{font-size:11px;color:#71808a;max-width:360px;line-height:1.8}
+.contact-note{margin-top:22px;padding:13px 15px;background:#f6f1e5;border-left:3px solid var(--gold);color:#85734b;font-size:9px}
+.contact-cards{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.contact-card{display:flex;gap:13px;align-items:flex-start;background:#f8f8f4;border:1px solid var(--line);padding:18px 15px;min-height:112px}
+.contact-symbol{width:34px;height:34px;flex:0 0 34px;border-radius:50%;display:grid;place-items:center;background:#e7eeea;color:var(--green);font-size:17px}
+.contact-card small,.contact-card b,.contact-card p{display:block}
+.contact-card small{font-size:7px;letter-spacing:.8px;font-weight:800;color:var(--green)}
+.contact-card b{font-size:11px;color:var(--blue-dark);margin:5px 0}
+.contact-card p{font-size:9px;color:#7c898e;margin:0}
+@media(max-width:1000px){.nav-link{padding:0 7px;font-size:8px}.nav-link:first-child{padding:0 7px}}
+@media(max-width:700px){.nav-link,.nav-link:first-child{flex:none;justify-content:flex-start;padding:12px 8px}.main-nav{width:auto}.contact-page-grid{grid-template-columns:1fr;gap:25px}.contact-cards{grid-template-columns:1fr 1fr}}
+@media(max-width:390px){.contact-cards{grid-template-columns:1fr}}
