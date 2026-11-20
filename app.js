@@ -5,8 +5,13 @@ document.addEventListener('DOMContentLoaded', () => {
   const menuToggle = document.querySelector('.menu-toggle');
 
   function showPage() {
-    const requested = (window.location.hash || '#home').slice(1);
-    const page = sections.some(section => section.id === requested) ? requested : 'home';
+    const hash = window.location.hash || '#home';
+    const targetId = hash.slice(1);
+    const target = document.getElementById(targetId);
+    const requestedSection = sections.find(section => section.id === targetId);
+    const nestedSection = target && target.closest('.page-section');
+    const page = requestedSection ? targetId : nestedSection ? nestedSection.id : 'home';
+
     sections.forEach(section => section.classList.toggle('active', section.id === page));
     navLinks.forEach(link => {
       const active = link.getAttribute('href') === '#' + page;
@@ -16,7 +21,9 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     if (menu) menu.classList.remove('open');
     if (menuToggle) menuToggle.setAttribute('aria-expanded', 'false');
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+
+    if (target && !requestedSection) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    else window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 
   window.addEventListener('hashchange', showPage);
