@@ -67,3 +67,8 @@ a,button,.button,.quick-grid>a,.direction-card,.branch-row,.news-item{transition
 @media(max-width:1000px){.nav-link{padding:0 7px;font-size:8px}.nav-link:first-child{padding:0 7px}}
 @media(max-width:700px){.nav-link,.nav-link:first-child{flex:none;justify-content:flex-start;padding:12px 8px}.main-nav{width:auto}.contact-page-grid{grid-template-columns:1fr;gap:25px}.contact-cards{grid-template-columns:1fr 1fr}}
 @media(max-width:390px){.contact-cards{grid-template-columns:1fr}}
+
+.photo-credits{font-size:8px;color:#8fa7bd}
+.photo-credits a{color:#c2d0dd;text-decoration:underline;text-underline-offset:2px}
+.photo-credits a:hover{color:#fff}
+@media(max-width:700px){.photo-credits{line-height:1.6}}
