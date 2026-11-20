@@ -11,7 +11,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const requestedSection = sections.find(section => section.id === targetId);
     const nestedSection = target && target.closest('.page-section');
     const page = requestedSection ? targetId : nestedSection ? nestedSection.id : 'home';
-
     sections.forEach(section => section.classList.toggle('active', section.id === page));
     navLinks.forEach(link => {
       const active = link.getAttribute('href') === '#' + page;
@@ -21,7 +20,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     if (menu) menu.classList.remove('open');
     if (menuToggle) menuToggle.setAttribute('aria-expanded', 'false');
-
     if (target && !requestedSection) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
     else window.scrollTo({ top: 0, behavior: 'smooth' });
   }
@@ -54,6 +52,18 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     const empty = document.querySelector('#news-empty');
     if (empty) empty.hidden = visible !== 0;
+  });
+
+  const images = window.SITE_IMAGES || {};
+  document.querySelectorAll('[data-image]').forEach(slot => {
+    const key = slot.dataset.image;
+    const url = images[key];
+    if (url && url.trim()) {
+      slot.style.backgroundImage = 'url("' + url.replace(/"/g, '\\"') + '")';
+      slot.classList.add('has-photo');
+      slot.setAttribute('role', 'img');
+      slot.setAttribute('aria-label', 'Иллюстрация: ' + key);
+    }
   });
 
   const year = document.querySelector('#year');
