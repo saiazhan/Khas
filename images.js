@@ -8,21 +8,21 @@
   Создай папку img рядом с index.html и положи туда свои изображения.
 */
 window.SITE_IMAGES = {
-  hero: "https://commons.wikimedia.org/wiki/Special:FilePath/Karate%2C_entrenamiento_de_Kihon_%28t%C3%A9cnicas_b%C3%A1sicas%29_y_Tsuki_%28golpes%29_en_Musha_Dojo.jpg",
-  athlete1: "https://commons.wikimedia.org/wiki/Special:FilePath/Kyokushin_karate_match.jpg",
-  athlete2: "https://commons.wikimedia.org/wiki/Special:FilePath/Karate_Kumite_.jpg",
-  athlete3: "https://commons.wikimedia.org/wiki/Special:FilePath/Karate%2C_entrenamiento_de_Kihon_%28t%C3%A9cnicas_b%C3%A1sicas%29_y_Tsuki_%28golpes%29_en_Musha_Dojo.jpg",
-  leader1: "https://commons.wikimedia.org/wiki/Special:FilePath/Kyokushin_karate_match.jpg",
-  leader2: "https://commons.wikimedia.org/wiki/Special:FilePath/Karate_Kumite_.jpg",
-  leader3: "https://commons.wikimedia.org/wiki/Special:FilePath/Karate%2C_entrenamiento_de_Kihon_%28t%C3%A9cnicas_b%C3%A1sicas%29_y_Tsuki_%28golpes%29_en_Musha_Dojo.jpg",
-  coach1: "https://commons.wikimedia.org/wiki/Special:FilePath/Karate%2C_entrenamiento_de_Kihon_%28t%C3%A9cnicas_b%C3%A1sicas%29_y_Tsuki_%28golpes%29_en_Musha_Dojo.jpg",
-  coach2: "https://commons.wikimedia.org/wiki/Special:FilePath/Kyokushin_karate_match.jpg",
-  coach3: "https://commons.wikimedia.org/wiki/Special:FilePath/Karate_Kumite_.jpg",
-  coach4: "https://commons.wikimedia.org/wiki/Special:FilePath/Karate%2C_entrenamiento_de_Kihon_%28t%C3%A9cnicas_b%C3%A1sicas%29_y_Tsuki_%28golpes%29_en_Musha_Dojo.jpg",
-  news1: "https://commons.wikimedia.org/wiki/Special:FilePath/Kyokushin_karate_match.jpg",
-  news2: "https://commons.wikimedia.org/wiki/Special:FilePath/Karate_Kumite_.jpg",
-  news3: "https://commons.wikimedia.org/wiki/Special:FilePath/Karate%2C_entrenamiento_de_Kihon_%28t%C3%A9cnicas_b%C3%A1sicas%29_y_Tsuki_%28golpes%29_en_Musha_Dojo.jpg",
-  news4: "https://commons.wikimedia.org/wiki/Special:FilePath/Karate_Kumite_.jpg"
+  hero: "https://upload.wikimedia.org/wikipedia/commons/e/eb/Karate%2C_entrenamiento_de_Kihon_%28t%C3%A9cnicas_b%C3%A1sicas%29_y_Tsuki_%28golpes%29_en_Musha_Dojo.jpg",
+  athlete1: "https://upload.wikimedia.org/wikipedia/commons/0/09/Kyokushin_karate_match.jpg",
+  athlete2: "https://upload.wikimedia.org/wikipedia/commons/b/bf/Karate_Kumite_.jpg",
+  athlete3: "https://upload.wikimedia.org/wikipedia/commons/e/eb/Karate%2C_entrenamiento_de_Kihon_%28t%C3%A9cnicas_b%C3%A1sicas%29_y_Tsuki_%28golpes%29_en_Musha_Dojo.jpg",
+  leader1: "https://upload.wikimedia.org/wikipedia/commons/0/09/Kyokushin_karate_match.jpg",
+  leader2: "https://upload.wikimedia.org/wikipedia/commons/b/bf/Karate_Kumite_.jpg",
+  leader3: "https://upload.wikimedia.org/wikipedia/commons/e/eb/Karate%2C_entrenamiento_de_Kihon_%28t%C3%A9cnicas_b%C3%A1sicas%29_y_Tsuki_%28golpes%29_en_Musha_Dojo.jpg",
+  coach1: "https://upload.wikimedia.org/wikipedia/commons/e/eb/Karate%2C_entrenamiento_de_Kihon_%28t%C3%A9cnicas_b%C3%A1sicas%29_y_Tsuki_%28golpes%29_en_Musha_Dojo.jpg",
+  coach2: "https://upload.wikimedia.org/wikipedia/commons/0/09/Kyokushin_karate_match.jpg",
+  coach3: "https://upload.wikimedia.org/wikipedia/commons/b/bf/Karate_Kumite_.jpg",
+  coach4: "https://upload.wikimedia.org/wikipedia/commons/e/eb/Karate%2C_entrenamiento_de_Kihon_%28t%C3%A9cnicas_b%C3%A1sicas%29_y_Tsuki_%28golpes%29_en_Musha_Dojo.jpg",
+  news1: "https://upload.wikimedia.org/wikipedia/commons/0/09/Kyokushin_karate_match.jpg",
+  news2: "https://upload.wikimedia.org/wikipedia/commons/b/bf/Karate_Kumite_.jpg",
+  news3: "https://upload.wikimedia.org/wikipedia/commons/e/eb/Karate%2C_entrenamiento_de_Kihon_%28t%C3%A9cnicas_b%C3%A1sicas%29_y_Tsuki_%28golpes%29_en_Musha_Dojo.jpg",
+  news4: "https://upload.wikimedia.org/wikipedia/commons/b/bf/Karate_Kumite_.jpg"
 };
 
 /*
